@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SERVER SSH - FendyDev</title>
+  <link rel="stylesheet" href="../style.css">
+  <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"/>
+  <style>
+  .list-akun {
+    margin: 100px 0 20px;
+  }
+.wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px;
+      width: 90%;
+    }
+    
+    .btn {
+      border-bottom: 2px solid #eee;
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 0;
+    }
+    
+    .btn:hover {
+      border-bottom: 2px solid blue;
+      color: blue;
+    }
+    #ssh-akun {
+      text-align: center;
+    }
+    #trojan-akun {
+      display: none;
+      text-align: center;
+    }
+      
+    #v2ray-akun {
+      display: none;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+      <nav>
+      <div class="logo logo1">
+        <div class="logo-header">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">FendyDev</span>
+        </div>
+        <div class="logo-image-header">
+          <a href="#"><img src="../images/profil.jpg" alt="logo"></a>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">FendyDev</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="../index.html" class="nav-link">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link">Dashboard</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="server-ssh.html" class="nav-link">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="link">SSH</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="server-vmess.html" class="nav-link">
+                <i class="bx bx-bell icon"></i>
+                <span class="link">V2ray - Vmess</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="server-trojan.html" class="nav-link">
+                <i class="bx bx-message-rounded icon"></i>
+                <span class="link">Trojan</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="list-akun.html" class="nav-link">
+                <i class="bx bx-pie-chart-alt-2 icon"></i>
+                <span class="link">List Account</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="topup.html" class="nav-link">
+                <i class="bx bx-heart icon"></i>
+                <span class="link">Top Up</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="information.html" class="nav-link">
+                <i class="bx bx-folder-open icon"></i>
+                <span class="link">Information</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="bottom-cotent">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-cog icon"></i>
+                <span class="link">Settings</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="list-akun">
+      <div class="container">
+        <div class="wrapper">
+          <p onclick="myFunction1()" class="btn">SSH</p>
+          <p onclick="myFunction2()" class="btn">V2RAY</p>
+          <p onclick="myFunction3()" class="btn">TROJAN</p>            
+        </div>
+        <div id="ssh-akun">
+          <h2>LIST ACCOUNT SSH</h2>
+          <div class="activity">
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Username</span>
+                        <span class="data-list">Prem</span>
+                        <span class="data-list">Deepa</span>
+                        <span class="data-list">Manisha</span>
+                        <span class="data-list">Pratima</span>
+                        <span class="data-list">Shahi</span>
+                        <span class="data-list">Chand</span>
+                        <span class="data-list">Bikash</span>
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Expired</span>
+                        <span class="data-list">2022-02-12</span>
+                        <span class="data-list">2022-02-12</span>
+                        <span class="data-list">2022-02-13</span>
+                        <span class="data-list">2022-02-13</span>
+                        <span class="data-list">2022-02-14</span>
+                        <span class="data-list">2022-02-14</span>
+                        <span class="data-list">2022-02-15</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Status</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="v2ray-akun">
+          <h2>LIST ACCOUNT V2RAY - VMESS</h2>
+          <div class="activity">
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Username</span>
+                        <span class="data-list">Asep</span>
+                        <span class="data-list">Deepa</span>
+                        <span class="data-list">Manisha</span>
+                        <span class="data-list">Pratima</span>
+                        <span class="data-list">Shahi</span>
+                        <span class="data-list">Chand</span>
+                        <span class="data-list">Bikash</span>
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Expired</span>
+                        <span class="data-list">2022-02-12</span>
+                        <span class="data-list">2022-02-12</span>
+                        <span class="data-list">2022-02-13</span>
+                        <span class="data-list">2022-02-13</span>
+                        <span class="data-list">2022-02-14</span>
+                        <span class="data-list">2022-02-14</span>
+                        <span class="data-list">2022-02-15</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Status</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="trojan-akun">
+          <h2>LIST ACCOUNT TROJAN</h2>
+          <div class="activity">
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Username</span>
+                        <span class="data-list">Endang</span>
+                        <span class="data-list">Deepa</span>
+                        <span class="data-list">Manisha</span>
+                        <span class="data-list">Pratima</span>
+                        <span class="data-list">Shahi</span>
+                        <span class="data-list">Chand</span>
+                        <span class="data-list">Bikash</span>
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Expired</span>
+                        <span class="data-list">2022-02-12</span>
+                        <span class="data-list">2022-02-12</span>
+                        <span class="data-list">2022-02-13</span>
+                        <span class="data-list">2022-02-13</span>
+                        <span class="data-list">2022-02-14</span>
+                        <span class="data-list">2022-02-14</span>
+                        <span class="data-list">2022-02-15</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Status</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                        <span class="data-list">Aktif</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <section class="overlay"></section>
+    </div>
+    </section>
+    <footer class="footer">
+      <p>Copyright &copy; 2023 <a href="index.html">FendyDev</a></p>
+    </footer>
+    <script>
+    function myFunction1() {
+      document.getElementById("ssh-akun").style.display = "inline";
+      document.getElementById("v2ray-akun").style.display = "none";
+      document.getElementById("trojan-akun").style.display = "none";
+    }
+    function myFunction2() {
+      document.getElementById("ssh-akun").style.display = "none";
+      document.getElementById("v2ray-akun").style.display = "inline";
+      document.getElementById("trojan-akun").style.display = "none";
+      
+    }
+    function myFunction3() {
+      document.getElementById("ssh-akun").style.display = "none";
+      document.getElementById("v2ray-akun").style.display = "none";
+      document.getElementById("trojan-akun").style.display = "inline";
+      
+    }
+    </script>
+    <script src="../script.js"></script>
+</body>
+</html>

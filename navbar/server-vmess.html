@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SERVER SSH - FendyDev</title>
+  <link rel="stylesheet" href="../style.css">
+  <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"/>
+  <style>
+
+
+  </style>
+</head>
+<body>
+      <nav>
+      <div class="logo logo1">
+        <div class="logo-header">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">FendyDev</span>
+        </div>
+        <div class="logo-image-header">
+          <a href="#"><img src="../images/profil.jpg" alt="logo"></a>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">FendyDev</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="../index.html" class="nav-link">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link">Dashboard</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="server-ssh.html" class="nav-link">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="link">SSH</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="server-vmess.html" class="nav-link nav-link-v2ray" style="background-color: var(--biru);">
+                <i class="bx bx-bell icon"></i>
+                <span class="link">V2ray - Vmess</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="server-trojan.html" class="nav-link">
+                <i class="bx bx-message-rounded icon"></i>
+                <span class="link">Trojan</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="list-akun.html" class="nav-link">
+                <i class="bx bx-pie-chart-alt-2 icon"></i>
+                <span class="link">List Account</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="topup.html" class="nav-link">
+                <i class="bx bx-heart icon"></i>
+                <span class="link">Top Up</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="information.html" class="nav-link">
+                <i class="bx bx-folder-open icon"></i>
+                <span class="link">Information</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="bottom-cotent">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-cog icon"></i>
+                <span class="link">Settings</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="overlay"></section>
+    
+    
+    <div class="saldo">
+      <div class="saldo-info">
+        <div class="box-saldo">
+          <div class="infomasi-akun">
+            <img src="../images/profil.jpg" alt="gambar profil">
+            <div class="informasi-akun-content">
+              <b>Nama : <span>Fendy Rahmat</span></b><br>
+              <b>Email : <span>fendytelegram@gmail.com</span></b><br>
+              <b>Tier : <span>Reseller</span></b><br>
+            </div>
+          </div>
+        </div>
+        <div class="box-saldo">
+          <b class="judul-sisa-saldo">Sisa Saldo</b>
+          <b class="sisa-saldo">40.000</b>
+        </div>
+        <div class="box-saldo">
+          <b class="judul-sisa-saldo">Akun Aktif</b>
+          <b class="sisa-saldo">4</b>
+        </div>
+        <div class="box-saldo">
+          <b class="judul-sisa-saldo">Total Akun</b>
+          <b class="sisa-saldo">10</b>
+        </div>
+      </div>
+    </div>
+    
+    <div class="region">
+    <div class="server-region">
+      <div class="server-region-content">
+        <a href="#">ALL SERVER</a>
+        <a href="#">SINGAPURA</a>
+        <a href="#">INDONESIA</a>
+      </div>
+    </div>
+  </div>
+    
+    <div class="price-list">
+      <div class="price-list-content">
+        <div class="box-list">
+          <img src="images/indonesia.png" alt="Server Indonesia">
+          <div class="judul-akun"><b>ID Biznet Gio Cloud</b></div>
+          <div class="sisa-akun">Available</div>
+          <div class="keterangan-akun">
+            <table cellspacing="11">
+              <tr>
+                <td>Reseller</td>
+                <td>:</td>
+                <td><b>10.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Member</td>
+                <td>:</td>
+                <td><b>15.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Domain</td>
+                <td>:</td>
+                <td>id-biznet.servervpn.me</td>
+              </tr>
+              <tr>
+                <td>Method</td>
+                <td>:</td>
+                <td>V2ray - Vmess</td>
+              </tr>
+              <tr>
+                <td>Device</td>
+                <td>:</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>TLS</td>
+                <td>:</td>
+                <td>443</td>
+              </tr>
+              <tr>
+                <td>HTTP</td>
+                <td>:</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Path</td>
+                <td>:</td>
+                <td>/v2ray</td>
+              </tr>
+              <tr>
+                <td>Tipe</td>
+                <td>:</td>
+                <td>Websocket</td>
+              </tr>
+            </table>
+          </div>
+            <div class="button-beli">
+              <a href="#">
+                <button class="btn-trial">Trial</button>
+              </a>
+              <a href="#">
+                <button class="btn-beli">Beli</button>
+              </a>
+            </div>
+        </div>
+        <div class="box-list">
+          <img src="images/indonesia.png" alt="Server Indonesia">
+          <div class="judul-akun"><b>ID Biznet Gio Cloud</b></div>
+          <div class="sisa-akun">Available</div>
+          <div class="keterangan-akun">
+            <table cellspacing="11">
+              <tr>
+                <td>Reseller</td>
+                <td>:</td>
+                <td><b>10.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Member</td>
+                <td>:</td>
+                <td><b>15.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Domain</td>
+                <td>:</td>
+                <td>id-biznet.servervpn.me</td>
+              </tr>
+              <tr>
+                <td>Method</td>
+                <td>:</td>
+                <td>V2ray - Vmess</td>
+              </tr>
+              <tr>
+                <td>Device</td>
+                <td>:</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>TLS</td>
+                <td>:</td>
+                <td>443</td>
+              </tr>
+              <tr>
+                <td>HTTP</td>
+                <td>:</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Path</td>
+                <td>:</td>
+                <td>/v2ray</td>
+              </tr>
+              <tr>
+                <td>Tipe</td>
+                <td>:</td>
+                <td>Websocket</td>
+              </tr>
+            </table>
+          </div>
+            <div class="button-beli">
+              <a href="#">
+                <button class="btn-trial">Trial</button>
+              </a>
+              <a href="#">
+                <button class="btn-beli">Beli</button>
+              </a>
+            </div>
+        </div>
+        <div class="box-list">
+          <img src="images/indonesia.png" alt="Server Indonesia">
+          <div class="judul-akun"><b>ID Biznet Gio Cloud</b></div>
+          <div class="sisa-akun">Available</div>
+          <div class="keterangan-akun">
+            <table cellspacing="11">
+              <tr>
+                <td>Reseller</td>
+                <td>:</td>
+                <td><b>10.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Member</td>
+                <td>:</td>
+                <td><b>15.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Domain</td>
+                <td>:</td>
+                <td>id-biznet.servervpn.me</td>
+              </tr>
+              <tr>
+                <td>Method</td>
+                <td>:</td>
+                <td>V2ray - Vmess</td>
+              </tr>
+              <tr>
+                <td>Device</td>
+                <td>:</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>TLS</td>
+                <td>:</td>
+                <td>443</td>
+              </tr>
+              <tr>
+                <td>HTTP</td>
+                <td>:</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Path</td>
+                <td>:</td>
+                <td>/v2ray</td>
+              </tr>
+              <tr>
+                <td>Tipe</td>
+                <td>:</td>
+                <td>Websocket</td>
+              </tr>
+            </table>
+          </div>
+            <div class="button-beli">
+              <a href="#">
+                <button class="btn-trial">Trial</button>
+              </a>
+              <a href="#">
+                <button class="btn-beli">Beli</button>
+              </a>
+            </div>
+        </div>
+        <div class="box-list">
+          <img src="images/indonesia.png" alt="Server Indonesia">
+          <div class="judul-akun"><b>ID Biznet Gio Cloud</b></div>
+          <div class="sisa-akun">Available</div>
+          <div class="keterangan-akun">
+            <table cellspacing="11">
+              <tr>
+                <td>Reseller</td>
+                <td>:</td>
+                <td><b>10.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Member</td>
+                <td>:</td>
+                <td><b>15.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Domain</td>
+                <td>:</td>
+                <td>id-biznet.servervpn.me</td>
+              </tr>
+              <tr>
+                <td>Method</td>
+                <td>:</td>
+                <td>V2ray - Vmess</td>
+              </tr>
+              <tr>
+                <td>Device</td>
+                <td>:</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>TLS</td>
+                <td>:</td>
+                <td>443</td>
+              </tr>
+              <tr>
+                <td>HTTP</td>
+                <td>:</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Path</td>
+                <td>:</td>
+                <td>/v2ray</td>
+              </tr>
+              <tr>
+                <td>Tipe</td>
+                <td>:</td>
+                <td>Websocket</td>
+              </tr>
+            </table>
+          </div>
+            <div class="button-beli">
+              <a href="#">
+                <button class="btn-trial">Trial</button>
+              </a>
+              <a href="#">
+                <button class="btn-beli">Beli</button>
+              </a>
+            </div>
+        </div>
+        <div class="box-list">
+          <img src="images/indonesia.png" alt="Server Indonesia">
+          <div class="judul-akun"><b>ID Biznet Gio Cloud</b></div>
+          <div class="sisa-akun">Available</div>
+          <div class="keterangan-akun">
+            <table cellspacing="11">
+              <tr>
+                <td>Reseller</td>
+                <td>:</td>
+                <td><b>10.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Member</td>
+                <td>:</td>
+                <td><b>15.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Domain</td>
+                <td>:</td>
+                <td>id-biznet.servervpn.me</td>
+              </tr>
+              <tr>
+                <td>Method</td>
+                <td>:</td>
+                <td>V2ray - Vmess</td>
+              </tr>
+              <tr>
+                <td>Device</td>
+                <td>:</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>TLS</td>
+                <td>:</td>
+                <td>443</td>
+              </tr>
+              <tr>
+                <td>HTTP</td>
+                <td>:</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Path</td>
+                <td>:</td>
+                <td>/v2ray</td>
+              </tr>
+              <tr>
+                <td>Tipe</td>
+                <td>:</td>
+                <td>Websocket</td>
+              </tr>
+            </table>
+          </div>
+            <div class="button-beli">
+              <a href="#">
+                <button class="btn-trial">Trial</button>
+              </a>
+              <a href="#">
+                <button class="btn-beli">Beli</button>
+              </a>
+            </div>
+        </div>
+        <div class="box-list">
+          <img src="images/indonesia.png" alt="Server Indonesia">
+          <div class="judul-akun"><b>ID Biznet Gio Cloud</b></div>
+          <div class="sisa-akun">Available</div>
+          <div class="keterangan-akun">
+            <table cellspacing="11">
+              <tr>
+                <td>Reseller</td>
+                <td>:</td>
+                <td><b>10.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Member</td>
+                <td>:</td>
+                <td><b>15.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Domain</td>
+                <td>:</td>
+                <td>id-biznet.servervpn.me</td>
+              </tr>
+              <tr>
+                <td>Method</td>
+                <td>:</td>
+                <td>V2ray - Vmess</td>
+              </tr>
+              <tr>
+                <td>Device</td>
+                <td>:</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>TLS</td>
+                <td>:</td>
+                <td>443</td>
+              </tr>
+              <tr>
+                <td>HTTP</td>
+                <td>:</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Path</td>
+                <td>:</td>
+                <td>/v2ray</td>
+              </tr>
+              <tr>
+                <td>Tipe</td>
+                <td>:</td>
+                <td>Websocket</td>
+              </tr>
+            </table>
+          </div>
+            <div class="button-beli">
+              <a href="#">
+                <button class="btn-trial">Trial</button>
+              </a>
+              <a href="#">
+                <button class="btn-beli">Beli</button>
+              </a>
+            </div>
+        </div>
+        <div class="box-list">
+          <img src="images/indonesia.png" alt="Server Indonesia">
+          <div class="judul-akun"><b>ID Biznet Gio Cloud</b></div>
+          <div class="sisa-akun">Available</div>
+          <div class="keterangan-akun">
+            <table cellspacing="11">
+              <tr>
+                <td>Reseller</td>
+                <td>:</td>
+                <td><b>10.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Member</td>
+                <td>:</td>
+                <td><b>15.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Domain</td>
+                <td>:</td>
+                <td>id-biznet.servervpn.me</td>
+              </tr>
+              <tr>
+                <td>Method</td>
+                <td>:</td>
+                <td>V2ray - Vmess</td>
+              </tr>
+              <tr>
+                <td>Device</td>
+                <td>:</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>TLS</td>
+                <td>:</td>
+                <td>443</td>
+              </tr>
+              <tr>
+                <td>HTTP</td>
+                <td>:</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Path</td>
+                <td>:</td>
+                <td>/v2ray</td>
+              </tr>
+              <tr>
+                <td>Tipe</td>
+                <td>:</td>
+                <td>Websocket</td>
+              </tr>
+            </table>
+          </div>
+            <div class="button-beli">
+              <a href="#">
+                <button class="btn-trial">Trial</button>
+              </a>
+              <a href="#">
+                <button class="btn-beli">Beli</button>
+              </a>
+            </div>
+        </div>
+        <div class="box-list">
+          <img src="images/indonesia.png" alt="Server Indonesia">
+          <div class="judul-akun"><b>ID Biznet Gio Cloud</b></div>
+          <div class="sisa-akun">Available</div>
+          <div class="keterangan-akun">
+            <table cellspacing="11">
+              <tr>
+                <td>Reseller</td>
+                <td>:</td>
+                <td><b>10.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Member</td>
+                <td>:</td>
+                <td><b>15.000 </b>/bulan</td>
+              </tr>
+              <tr>
+                <td>Domain</td>
+                <td>:</td>
+                <td>id-biznet.servervpn.me</td>
+              </tr>
+              <tr>
+                <td>Method</td>
+                <td>:</td>
+                <td>V2ray - Vmess</td>
+              </tr>
+              <tr>
+                <td>Device</td>
+                <td>:</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>TLS</td>
+                <td>:</td>
+                <td>443</td>
+              </tr>
+              <tr>
+                <td>HTTP</td>
+                <td>:</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Path</td>
+                <td>:</td>
+                <td>/v2ray</td>
+              </tr>
+              <tr>
+                <td>Tipe</td>
+                <td>:</td>
+                <td>Websocket</td>
+              </tr>
+            </table>
+          </div>
+            <div class="button-beli">
+              <a href="#">
+                <button class="btn-trial">Trial</button>
+              </a>
+              <a href="#">
+                <button class="btn-beli">Beli</button>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Copyright &copy; 2023 <a href="index.html">FendyDev</a></p>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
